@@ -1,0 +1,5 @@
+git add .gitignore
+git rm -r --cached envku/   # Hapus envku dari repo (tapi tidak dari folder)
+git commit -m "Add .gitignore and remove envku from tracking"
+git push
+envku/
