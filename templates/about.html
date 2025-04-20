@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>About Page</h1>
+    <p>This is a simple Flask application using Pandas!</p>
+    
+    <h2>Data from CSV (First 5 Entries):</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Umur</th>
+                <th>Kota</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in about_data %}
+            <tr>
+                <td>{{ row['Nama'] }}</td>
+                <td>{{ row['Umur'] }}</td>
+                <td>{{ row['Kota'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <p><a href="/">Go to Home</a></p>
+</body>
+</html>

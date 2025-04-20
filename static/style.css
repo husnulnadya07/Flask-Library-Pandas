@@ -1,0 +1,88 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #f0f0f0;
+    padding: 40px;
+}
+
+/* Heading */
+h1, h2 {
+    text-align: center;
+    color: #e6c300; /* Gold elegan */
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+/* Tabel */
+table {
+    width: 90%;
+    margin: 0 auto 40px auto;
+    border-collapse: collapse;
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.15);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #2b2b2b;
+    color: #e6c300;
+}
+
+th, td {
+    padding: 14px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+tr:hover {
+    background-color: rgba(230, 195, 0, 0.1);
+}
+
+a {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 12px 25px;
+    background: transparent;
+    color: #e6c300;
+    border: 2px solid #e6c300;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+a:hover {
+    background-color: #e6c300;
+    color: #121212;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #e6c300;
+}
+
+/* Paragraf */
+p {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 18px;
+    color: #ccc;
+}
+
+/* Efek garis bawah hiasan */
+h1::after, h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #e6c300;
+    margin: 10px auto 0 auto;
+    border-radius: 2px;
+}
